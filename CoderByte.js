@@ -17,7 +17,17 @@ function NumberSearch(str) {
 
 //console.log(NumberSearch("Hello Wo3231rld13"));
 
-
-
-
-
+function userValidation(str) {
+  if (
+    str.length >= 4 &&
+    str.length <= 25 &&
+    /[a-zA-Z]/.test(str.charAt(0)) &&
+    /^\w+$/.test(str) &&
+    /[a-zA-Z0-9]/.test(str.charAt(str.length - 1))
+  ) {
+    return true;
+  } else {
+    return false;
+  }
+}
+//console.log(userValidation("u_hello_world123"));
