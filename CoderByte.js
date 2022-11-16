@@ -72,13 +72,30 @@ function LetterCapitalize(str) {
 // console.log(LetterCapitalize("my name is ayhan"));
 
 function PrimeTime(num) {
-    if (num < 2) return false;
-    if (num !== Math.ceil(num)) return false;
-    for (var i = 2; i <= Math.sqrt(num); i++) {
-      if (num % i === 0) return false;
-    }
-  
-    return true;
+  if (num < 2) return false;
+  if (num !== Math.ceil(num)) return false;
+  for (var i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) return false;
   }
-  
-  console.log(PrimeTime(4))
+
+  return true;
+}
+
+//  console.log(PrimeTime(4))
+
+function BitwiseOne(strArr) {
+  let str1 = strArr[0];
+  let str2 = strArr[1];
+  let newStr = "";
+  len = str1.length;
+  for (let i = 0; i < len; i++) {
+    if (!str1.charAt(i) === "1" || str2.charAt(i) === "1") {
+      newStr = newStr += "1";
+    } else {
+      newStr = newStr += "0";
+    }
+  }
+  return newStr;
+}
+
+console.log(BitwiseOne(["100", "000"]));
