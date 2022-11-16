@@ -33,17 +33,17 @@ function userValidation(str) {
 //console.log(userValidation("u_hello_world123"));
 
 function fizzBuzz(num) {
-  let res = [];
+  let res = "";
   let i = 1;
   for (i; i <= num; i++) {
-    if (i % 15 === 0) {
-      res.push("FizzBuzz");
-    } else if (i % 3 === 0) {
-      res.push("Fizz");
-    } else if (i % 5 === 0) {
-      res.push("Buzz");
+    if (i % 15 == 0) {
+      res += " FizzBuzz ";
+    } else if (i % 3 == 0) {
+      res += " Fizz ";
+    } else if (i % 5 == 0) {
+      res += " Buzz ";
     } else {
-      res.push(i);
+      res += i + " ";
     }
   }
   return res;
