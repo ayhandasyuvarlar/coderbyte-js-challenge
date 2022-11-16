@@ -15,4 +15,9 @@ function NumberSearch(str) {
   return Math.round(number / letter); //1
 }
 
-console.log(NumberSearch("Hello Wo3231rld13"));
+//console.log(NumberSearch("Hello Wo3231rld13"));
+
+
+
+
+
