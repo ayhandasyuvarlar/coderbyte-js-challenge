@@ -49,3 +49,15 @@ function fizzBuzz(num) {
   return res;
 }
 console.log(fizzBuzz(15));
+
+function FirstReverse(str) {
+  let newString = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    newString += str[i];
+  }
+  return newString;
+  // code goes here
+}
+function LetterCapitalize(str) {
+  let;
+}
