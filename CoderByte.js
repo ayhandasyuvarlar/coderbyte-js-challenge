@@ -58,6 +58,15 @@ function FirstReverse(str) {
   return newString;
   // code goes here
 }
+// console.log('HelloWorld')
+
 function LetterCapitalize(str) {
-  let;
+  let newStr = str.split(" ");
+  for (let i = 0; i < newStr.length; i++) {
+    newStr[i] =
+      newStr[i].charAt(0).toUpperCase() + newStr[i].slice(1).toLowerCase();
+  }
+  return newStr.join(" ");
 }
+
+console.log(LetterCapitalize("my name is ayhan"));
