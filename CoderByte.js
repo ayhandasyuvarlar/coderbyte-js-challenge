@@ -69,4 +69,16 @@ function LetterCapitalize(str) {
   return newStr.join(" ");
 }
 
-console.log(LetterCapitalize("my name is ayhan"));
+// console.log(LetterCapitalize("my name is ayhan"));
+
+function PrimeTime(num) {
+    if (num < 2) return false;
+    if (num !== Math.ceil(num)) return false;
+    for (var i = 2; i <= Math.sqrt(num); i++) {
+      if (num % i === 0) return false;
+    }
+  
+    return true;
+  }
+  
+  console.log(PrimeTime(4))
