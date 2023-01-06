@@ -1,4 +1,4 @@
-function FirstReverse(str) {
+function firstReverse(str) {
   let answer = "";
   let strLength = str.length;
   let i;
@@ -9,4 +9,4 @@ function FirstReverse(str) {
   return answer;
 }
 
-console.log(FirstReverse("Hello, My name is Ayhan"));
+console.log(firstReverse("Hello, My name is Ayhan"));

@@ -1,4 +1,4 @@
-function FirstFactorial(num) {
+function firstFactorial(num) {
   if (num === 1) {
     return num;
   }
@@ -8,4 +8,4 @@ function FirstFactorial(num) {
   return num;
 }
 
-console.log(FirstFactorial(5));
+console.log(firstFactorial(5));
